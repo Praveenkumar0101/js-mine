@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color: blueviolet;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        
+        <center><h1>Praveen</h1></center>
+        </body>
+        <style>
+    h1 {
+        position: relative;
+        font-size: 5rem;
+        border: 3px solid red;
+        color: rgb(20, 218, 13);
+        border-radius: 4px;
+    }
+    h1::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom:0%;
+        top: 0;
+        background: hsl(66, 92%, 49%);
+        transform: scale(0);
+        transition: transform 0.20s ease;
+        z-index: -1;
+        transform-origin: right;
+    }
+
+    h1:hover::before {
+        transform: scalex(1);
+        transform-origin: left;
+    }
+</html>
